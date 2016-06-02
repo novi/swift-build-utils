@@ -3,8 +3,9 @@
 SCRIPT_DIR=``"$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"``
 
 sudo rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
-    sudo apt-get update && \
-    sudo apt-get install -y autoconf libtool libkqueue-dev libkqueue0 libcurl4-openssl-dev libbsd-dev libblocksruntime-dev && \
+    sudo apt-get update
+
+sudo apt-get install -y autoconf libtool libkqueue-dev libkqueue0 libcurl4-openssl-dev libbsd-dev libblocksruntime-dev && \
     sudo apt-get clean && \
     sudo rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
