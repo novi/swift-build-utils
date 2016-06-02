@@ -1,0 +1,15 @@
+diff --git dispatch/dispatch.h dispatch/dispatch.h
+index bb32bdf..85eb992 100644
+--- dispatch/dispatch.h
++++ dispatch/dispatch.h
+@@ -26,6 +26,8 @@
+ #include <TargetConditionals.h>
+ #endif
+ #include <sys/cdefs.h>
++#include <sys/types.h>
++#include <stdio.h>
+ #include <stddef.h>
+ #include <stdint.h>
+ #include <stdbool.h>
+-Subproject commit e16bcd6c4b4df3fd85939a981baf94b30968a1ba
++Subproject commit e16bcd6c4b4df3fd85939a981baf94b30968a1ba-dirty
