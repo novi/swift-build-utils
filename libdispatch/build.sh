@@ -2,10 +2,11 @@
 
 SCRIPT_DIR=``"$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"``
 
-apt-get update && \
+sudo rm /var/lib/apt/lists/* -vf && \
+    sudo apt-get update && \
     sudo apt-get install -y autoconf libtool libkqueue-dev libkqueue0 libcurl4-openssl-dev libbsd-dev libblocksruntime-dev && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+    sudo apt-get clean && \
+    sudo rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 cd && \
     git clone --recursive -b swift-3.0-preview-1-branch https://github.com/apple/swift-corelibs-libdispatch.git && \
