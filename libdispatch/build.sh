@@ -10,7 +10,7 @@ sudo apt-get install -y autoconf libtool libkqueue-dev libkqueue0 libcurl4-opens
     sudo rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 cd && \
-    git clone --recursive -b swift-3.0-preview-1-branch https://github.com/apple/swift-corelibs-libdispatch.git && \
+    git clone --recursive -b experimental/foundation https://github.com/apple/swift-corelibs-libdispatch.git && \
     pushd swift-corelibs-libdispatch
 
 patch -p0 < $SCRIPT_DIR/01-include-header.patch
